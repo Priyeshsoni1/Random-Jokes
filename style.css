@@ -1,0 +1,110 @@
+/* @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:600'); */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+	--main-color: #e7dced;
+	--secondary-color: #b6d8ac;
+	--sans: "josefin sans", sans serif;
+}
+
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  width: 400px;
+  height: 400px;
+	background: var(--main-color);
+  border-radius: 5px;
+  font-family: "dancing script", cursive;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  letter-spacing: .5px;
+}
+.button  {
+    background: #d38a8a;
+    text-align: center;
+    color: #fff;
+      padding: 1rem 0;
+      width: 100%;
+      font-family: var(--sans);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      transition: .2s ease-out;
+  }
+
+.gfg {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 1rem;
+    
+}
+/* .joke {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 1rem;
+  
+} */
+
+.button:hover {
+    background: var(--secondary-color);
+    cursor: pointer; 
+  }
+
+ 
+
+  .number::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: -30px;
+    width: 90px;
+    height: 180px;
+    background: var(--secondary-color);
+    transform: rotate(-45deg);
+    z-index: -1;
+      box-shadow: 0 0 .7rem rgba(0, 0, 0, .5);
+  }
+  
+  .number {
+      font-family: var(--sans);
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    right: 15px;
+    color: fade-out(#fff, .3);
+  }
+  .fas {
+	font-size: 3.5rem;
+	position: absolute;
+	top: 12%;
+	left: 7%;
+	color: rgba(100, 58, 122, .2);
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
