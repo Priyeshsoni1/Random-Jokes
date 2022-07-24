@@ -8,7 +8,7 @@ const whatsapp =document.getElementById("whatsapp");
 let realData="";
 
 const what=()=>{
-    let whats='whatsapp://send?text=blahblah';
+    let whats='whatsapp://send?text=${realData.setup} ${realData.delivery}';
     window.open(whats);
 
 }
