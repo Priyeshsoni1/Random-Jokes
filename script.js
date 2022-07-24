@@ -8,7 +8,7 @@ const whatsapp =document.getElementById("whatsapp");
 let realData="";
 
 const what=()=>{
-    let whats='whatsapp://send?text=realData.setup realData.delivery';
+    let whats='whatsapp://send?text=data1';
     window.open(whats);
 
 }
@@ -20,8 +20,10 @@ const getjokes=async()=>{
     try{
         let data=await fetch(api);
         let realData=await data.json();
-        jo.innerText=realData.setup;
-        joke.innerText=realData.delivery;
+        data1=realData.setup;
+        data2=realData.delivery;
+        jo.innerText=data1;
+        joke.innerText=data2;
     } catch(error){}
 
 };
